@@ -1,9 +1,4 @@
-[17:10, 17.12.2024] Günter Steininger: # Geräte-Verwaltungs-App
-
-Dieses Projekt bietet eine benutzerfreundliche Oberfläche zur Verwaltung von Geräten, Nutzern und Reservierungen. Es ermöglicht Geräteverwaltung, Nutzerverwaltung, Wartungsplanung und die Erstellung sowie Löschung von Reservierungen.
-
----
-[17:34, 17.12.2024] Günter Steininger: import json
+import json
 from tinydb import TinyDB, Query
 from datetime import datetime, date, timedelta
 import uuid
