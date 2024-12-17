@@ -1,0 +1,46 @@
+{
+    "devices": [
+      {
+        "device_id": 1,
+        "device_name": "IPAD",
+        "device_type": "Typ A",
+        "device_description": "Tablet für Büro",
+        "responsible_person": {
+          "user_id": "user1",
+          "username": "Günter",
+          "email": "guenter@example.com",
+          "role": "Geräteverantwortlicher"
+        },
+        "end_of_life": "2025-02-21",
+        "maintenance_cost": 5.0
+      },
+      {
+        "device_id": 2,
+        "device_name": "Fernseher",
+        "device_type": "Typ B",
+        "device_description": "Monitor im Konferenzraum",
+        "responsible_person": {
+          "user_id": "user2",
+          "username": "Andre",
+          "email": "andre@example.com",
+          "role": "Techniker"
+        },
+        "end_of_life": "2024-12-31",
+        "maintenance_cost": 10.0
+      },
+      {
+        "device_id": 3,
+        "device_name": "Laptop",
+        "device_type": "Typ C",
+        "device_description": "Notebook für IT-Team",
+        "responsible_person": {
+          "user_id": "user1",
+          "username": "Günter",
+          "email": "guenter@example.com",
+          "role": "IT-Admin"
+        },
+        "end_of_life": "2026-01-01",
+        "maintenance_cost": 15.0
+      }
+    ]
+  }
