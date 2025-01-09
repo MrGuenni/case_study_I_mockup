@@ -9,3 +9,5 @@ Dieses Projekt bietet eine benutzerfreundliche Oberfläche zur Verwaltung von Ge
 - **Python 3.8 oder höher**
 - Abhängigkeiten aus der Datei `requirements.txt`
 ---
+
+![Nutzer anlegen](Screenshot Nutzer anlegen.png)

@@ -1,17 +1,1 @@
-{
-    "_default": {
-      "1": {
-        "user_id": "2f37d9e4-a8f9-4375-9e37-dc7e82b5a571",
-        "username": "Günter",
-        "email": "guenter@example.com",
-        "role": "Geräteverantwortlicher"
-      },
-      "2": {
-        "user_id": "1a47d8c5-1c94-452a-91fa-5f37b5f35abc",
-        "username": "Andre",
-        "email": "andre@example.com",
-        "role": "Reservierer"
-      }
-    }
-  }
-  
+{"_default": {"1": {"user_id": "2f37d9e4-a8f9-4375-9e37-dc7e82b5a571", "username": "G\u00c3\u00bcnter", "email": "guenter@example.com", "role": "Ger\u00c3\u00a4teverantwortlicher"}, "2": {"user_id": "1a47d8c5-1c94-452a-91fa-5f37b5f35abc", "username": "Andre", "email": "andre@example.com", "role": "Reservierer"}, "3": {"user_id": "93914241-b9a0-4bd1-ad80-bf8b87fe50c7", "username": "Hanspeter", "email": "h.peter@mail.com", "role": "Reservierer"}}}
