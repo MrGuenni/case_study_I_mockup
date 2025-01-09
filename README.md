@@ -10,4 +10,4 @@ Dieses Projekt bietet eine benutzerfreundliche Oberfläche zur Verwaltung von Ge
 - Abhängigkeiten aus der Datei `requirements.txt`
 ---
 
-![Nutzer anlegen](Screenshot Nutzer anlegen.png)
+![Nutzer anlegen](Screenshot_Nutzer_anlegen.png)
