@@ -12,9 +12,9 @@ class DateEncoder(json.JSONEncoder):
 class DatabaseConnector:
     _instance = None
 
-    def _new_(cls):
+    def __new__(cls):
         if cls._instance is None:
-            cls.instance = super(DatabaseConnector, cls).new_(cls)
+            cls._instance = super(DatabaseConnector, cls).__new__(cls)
             cls._instance._initialize()
         return cls._instance
 
@@ -31,8 +31,8 @@ class DatabaseConnector:
         return self.user_db.table('users')  # Name der Benutzertabelle
 
 class UserDatabase(DatabaseConnector):
-    def _init_(self):
-        super()._init_()
+    def __init__(self):
+        super().__init__()
 
     def add_user(self, username, email, role):
         if self.user_db.search(Query().username == username):
@@ -51,8 +51,8 @@ class UserDatabase(DatabaseConnector):
         return self.user_db.all()
 
 class DeviceDatabase(DatabaseConnector):
-    def _init_(self):
-        super()._init_()
+    def __init__(self):
+        super().__init__()
 
     def add_device(self, device_id, device_name, device_type, device_description, responsible_person, end_of_life=None, first_maintenance=None, next_maintenance=None, maintenance_interval=None, maintenance_cost=None):
         if self.device_db.search(Query().device_id == device_id):
@@ -97,8 +97,8 @@ class DeviceDatabase(DatabaseConnector):
         return self.device_db.all()
 
 class ReservationDatabase(DatabaseConnector):
-    def _init_(self):
-        super()._init_()
+    def __init__(self):
+        super().__init__()
         self.reservation_db = self.device_db.table("reservations")
 
     def add_reservation(self, device_id, user_id, start_date, end_date):
@@ -174,8 +174,8 @@ class ReservationDatabase(DatabaseConnector):
 
 
 class MaintenanceDatabase(DatabaseConnector):
-    def _init_(self):
-        super()._init_()
+    def __init__(self):
+        super().__init__()
 
     def get_next_maintenance_dates(self):
         devices = self.device_db.all()
@@ -202,7 +202,7 @@ class MaintenanceDatabase(DatabaseConnector):
         quarterly_costs = {'Q1': 0, 'Q2': 0, 'Q3': 0, 'Q4': 0}
 
         for device in devices:
-            if all(key in device for key in ['first_maintenance', '_maintenance_interval', '_maintenance_cost']):
+            if all(key in device for key in ['first_maintenance', '__maintenance_interval', '__maintenance_cost']):
                 first_maintenance_date = datetime.fromisoformat(device['first_maintenance'])
                 maintenance_interval = timedelta(days=device['__maintenance_interval'])
                 maintenance_cost = device['__maintenance_cost']
