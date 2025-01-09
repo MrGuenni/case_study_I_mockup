@@ -11,3 +11,7 @@ Dieses Projekt bietet eine benutzerfreundliche Oberfläche zur Verwaltung von Ge
 ---
 
 ![Nutzer anlegen](Screenshot_Nutzer_anlegen.png)
+![Gerät anlegen](Screenshot_gerät_anlegen.png)
+![Gerät ändern](Screenshot_gerät_ändern.png)
+![Reservierung anlegen/entfernen](Screenshot_reservierung.png)
+![Warungs-Management](Screenshot_wartung.png)
