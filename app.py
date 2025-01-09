@@ -143,5 +143,5 @@ def main():
     if st.session_state['current_action']:
         actions[st.session_state['current_action']]()
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
